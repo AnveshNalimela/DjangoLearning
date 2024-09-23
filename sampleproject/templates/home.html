@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="add" method="POST">
+    {% csrf_token %}
+    <label>Enter the number No:</label>
+    <input type="number" placeholder="10" name="num1">
+    <label>Enter the number No:</label>
+    <input type="number" placeholder="10" name="num2">
+    <input type="submit">
+</form>
+
+
+{% endblock %}
